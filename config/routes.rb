@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'shows#index'
   resources :shows
   resources :channels
+  get '/search' => 'shows#search', :as => 'search_page'
 end

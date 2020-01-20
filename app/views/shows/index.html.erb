@@ -1,3 +1,8 @@
+<%= form_tag(shows_path, method: :get) do %>  
+  <%= text_field_tag(:search, params[:search]) %>  
+    <%= submit_tag ("Search")%>  
+<% end %>
+
 <h1>Listing Shows</h1>
 
 <table>

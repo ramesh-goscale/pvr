@@ -1,5 +1,7 @@
 class ShowsController < ApplicationController
   def index
-    @shows = Show.all
+    @shows = Show.search(params[:search])
   end
+
+ 
 end
