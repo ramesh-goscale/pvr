@@ -1,0 +1,16 @@
+<h1>Listing Shows</h1>
+
+<table>
+  <tr>
+    <th>Channel Name</th>
+    <th>Show Timings</th>
+    <th></th>
+  </tr>
+
+  <% @shows.each do |show| %>
+    <tr>
+      <td><%= show.name %></td>
+      <td><%= show.starts_at %></td>
+    </tr>
+  <% end %>
+</table>
