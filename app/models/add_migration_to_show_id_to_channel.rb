@@ -1,0 +1,2 @@
+class AddMigrationToShowIdToChannel < ApplicationRecord
+end
